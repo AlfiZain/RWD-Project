@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a survey form to gather the hobbies of peoples</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">
+          Name:
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label">
+          Email:
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </label>
+        <label id="number-label">
+          Age:
+          <input id="number" type="number" placeholder="Enter your age" min="18" max="25" />
+        </label>
+        <label>
+          Enter your occupation:
+          <select id="dropdown">
+            <option>Student</option>
+            <option>Freelancer</option>
+            <option>Factory Workers</option>
+            <option>Office Workers</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose your gender:</legend>
+        <label for="gender-male">
+          <input id="gender-male" class="inline" name="gender" type="radio" value="male" />
+          Male
+        </label>
+        <label for="gender-female">
+          <input id="gender-female" class="inline" name="gender" type="radio" value="female" />
+          Female
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Choose your hobby:</legend>
+        <input type="checkbox" class="inline" value="reading" />Reading <input type="checkbox" class="inline" value="gaming" />Gaming <input type="checkbox" class="inline" value="coding" />Coding
+        <input type="checkbox" class="inline" value="painting" />Painting
+      </fieldset>
+      <fieldset>
+        <label>
+          Words for today:
+          <textarea id="words" placeholder="Enter your words.."></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
