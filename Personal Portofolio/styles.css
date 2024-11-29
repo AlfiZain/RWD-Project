@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Raleway, sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #caf0f8;
+}
+
+@media only screen and (max-width: 980px) {
+  html {
+    font-size: 70%;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  html {
+    font-size: 65%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #023e8a;
+}
+
+.nav-link {
+  width: 50%;
+  max-width: 500px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-link a {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#welcome-section {
+  max-width: 1000px;
+  width: 100%;
+  height: 100vh;
+  margin: 10vh auto 0 auto;
+  padding: 0.5em;
+  background-color: #caf0f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+}
+
+#welcome-section p {
+  color: #023e8a;
+}
+
+#projects {
+  padding: 6em 0.5em;
+  margin: 0 auto 0 auto;
+  background-color: #0077b6;
+  color: white;
+  text-align: center;
+}
+
+#project h2 {
+  font-size: 2rem;
+}
+
+.project-grid {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: space-evenly;
+  gap: 1em;
+  margin: 2em auto 0 auto;
+}
+
+.project-tile {
+  border: 2px solid #7dd3fc;
+  box-shadow: 1px 1px 2px #e0f2fe;
+  border-radius: 0.375em;
+  padding: 1em;
+  overflow: hidden;
+}
+
+.project-img {
+  height: calc(100% - 7rem);
+  max-height: 18em;
+  width: 100%;
+  border-radius: 0.375em;
+  box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  padding: 2em 0.5em;
+}
+
+#contact {
+  max-width: 1000px;
+  width: 100%;
+  height: 100vh;
+  padding: 2em 0.5em;
+  margin: 0 auto;
+  background-color: #caf0f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-card {
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+
+.contact-title {
+  font-size: 2rem;
+  padding: 0.25em;
+}
+
+.contact-details {
+  color: black;
+  font-size: 1.25rem;
+}
+
+.btn:hover {
+  transform: scale(1.15);
+}
+
+#footer {
+  width: 100%;
+  height: 10vh;
+  padding: 2em 0.5em;
+  margin: 0 auto;
+  background-color: #023e8a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
